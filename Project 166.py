@@ -81,11 +81,11 @@ def draw(direction , oldx , oldy , newx , newy):
         draw_circle = canvas.create_oval(oldx , oldy , newx , newy , fill = color)
         
     if(direction == "r"):
-        draw_rectangle = canvas.create_rectangle(oldx , oldy , newx , newy , fill = color)
+        draw_rectangle = canvas.create_rectangle(oldx , oldy , newx , newy, fill = color)
         
         
     if(direction == "l"):
-        draw_line = canvas.create_line(oldx , oldy , newx , newy ,width = 3, fill = color)
+        draw_line = canvas.create_line(oldx , oldy , newx , newy, fill = color)
                 
 root.bind("<c>" , circle) 
 root.bind("<r>" , rectangle)   
